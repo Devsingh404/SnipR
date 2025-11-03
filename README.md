@@ -1,4 +1,4 @@
-# 🎯 Snipr
+# 🎯 SnipR
 
 **Snipr** is a modern **Code Snippet Manager** that lets you save, organize, and access your favorite code snippets anytime.  
 Built with **Node.js**, **Express**, **MongoDB**, and a sleek **HTML/CSS/JS** frontend, Snipr helps you aim, store, and fire off your best snippets instantly.

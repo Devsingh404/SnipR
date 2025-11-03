@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1>SnipR</h1>
+            
+            <div class="btn-blue" id="Logout-btn">Log-Out</div>
+        </div>
+
+        
+        <div class="body">
+            <div class="heading-search">
+                <h2>Your snippets</h2>
+                <input type="text" class="search" placeholder="🔍 Search snippets...">
+                <div class="btn-blue" id="btn">New Snippet</div>
+            </div>
+
+            <div class="snippetContainer">
+                <!-- <div class="card">
+                    <div class="cardHead">
+                        <h3>DB Connection</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <h3>Button</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <h3>Express</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <h3>Disjoint set</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <h3>Express</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p>
+                </div>
+
+                <div class="card">
+                    <div class="cardHead">
+                        <h3>Routes</h3>
+                        <div class="card-actions">
+                            <img src="icons/edit.png" alt="Edit" class="action-icon">
+                            <img src="icons/delete.png" alt="Delete" class="action-icon">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Date-Created: 1/12/2029</p> -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Snippet Form Modal -->
+
+    <div class="modal" id="snippetFormModal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 id="modalTitle">New Snippet</h2>
+                
+            </div>
+
+            <div class="modal-body">
+                <div class="input-row">
+                    <input type="text" id="snippetTitle" placeholder="Title">
+                    <select id="snippetLanguage">
+                        <option value="" disabled selected>Select Language</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="c">C</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </div>
+
+                <input type="text" id="snippetTags" placeholder="Tags">
+                <textarea id="snippetCode" placeholder="Your code here..."></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-blue" id="saveSnippetBtn">Save</button>
+                <button class="btn-blue" id="cancelSnippetBtn">Cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Edit Snippet Modal -->
+    <div class="modal" id="editSnippetModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Snippet</h2>
+                <!-- Copy icon (use your downloaded icon) -->
+                <img src="icons/copy.png" alt="Copy" class="copy-icon" id="copySnippetBtn">
+            </div>
+
+            <div class="modal-body">
+                <div class="input-row">
+                    <input type="text" id="editTitle" placeholder="Snippet Title">
+                    <select id="editLanguage">
+                        <option value="" disabled selected>Select Language</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="c">C</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                </div>
+
+                <input type="text" id="editTags" placeholder="Tags (comma separated)">
+                <textarea id="editCode" placeholder="Write your code here..."></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-blue" id="updateSnippetBtn">Update</button>
+                <button class="btn-blue" id="deleteSnippetBtn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

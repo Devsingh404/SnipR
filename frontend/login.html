@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Slider Sign in/Sign up Form | JV Codes</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="loginstyle.css">
+    <!-- Link to Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Sign-up form container -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <!-- Social media icons for Sign-up -->
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-github"></i></a>
+                </div>
+                <span>or register as a new user</span>
+                <input type="text" placeholder="Userame" />
+                <div class="input-message" id="signupUsernameMessage"></div>
+                
+                <input type="password" placeholder="Password" />
+                <div class="input-message" id="signupPasswordMessage"></div>
+                
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign-in form container -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <!-- Social media icons for Sign-in -->
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-github"></i></a>
+                </div>
+                <span>or enter your details</span>
+                <input type="text" placeholder="Username" />
+                <div class="input-message" id="loginUsernameMessage"></div>
+
+                <input type="password" placeholder="Password" />
+                <div class="input-message" id="loginPasswordMessage"></div> 
+
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay container for toggle effect -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Login to your existing account</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="loginscript.js"></script>
+</body>
+</html>
